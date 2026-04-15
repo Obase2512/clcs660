@@ -7,21 +7,21 @@ variable "aws_region" {
 variable "aws_access_key" {
   description = "AWS access key"
   type        = string
-# default     = "your_aws_access_key"
+  default     = "your_aws_access_key"
 }
 
 variable "aws_secret_key" {
   description = "AWS secret key"
   type        = string
   sensitive   = true
-# default     = "your_aws_secret_key"
+  default     = "your_aws_secret_key"
 }
 
 variable "aws_session_token" {
   description = "AWS session token for temporary credentials"
   type        = string
   sensitive   = true
-# default     = "your_aws_session_token"
+  default     = "your_aws_session_token"
   }
 
 variable "project_name" {
