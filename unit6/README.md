@@ -26,31 +26,32 @@ This project deploys a small AWS environment that hosts a demo application on EC
 2. Install Terraform from the Command Line (e.g Cloudshell)
     1  sudo yum install -y yum-utils
     2  curl -O https://releases.hashicorp.com/terraform/1.5.7/terraform_1.5.7_linux_amd64.zip
+
     3  unzip terraform_1.5.7_linux_amd64.zip
     4  sudo mv terraform /usr/local/bin/
     5  terraform -v
 
-3. Update `terraform.tfvars` if needed:
+4. Update `terraform.tfvars` if needed:
    ```hcl
    aws_region         = "us-east-1"
    notification_email = "your-email@example.com"
    ec2_instance_type  = "t3.micro"
    ```
 
-4. Initialize Terraform:
+5. Initialize Terraform:
    terraform init
 
-5. Review the plan:
+6. Review the plan:
    terraform plan
 
-6. Deploy the stack:
+7. Deploy the stack:
    terraform apply
 
-7. Confirm the SNS subscription from your email inbox.
+8. Confirm the SNS subscription from your email inbox.
 
-8. Open the demo application using the Terraform output `demo_app_url`.
+9. Open the demo application using the Terraform output `demo_app_url`.
 
-9. Wait for the scheduled Lambda run, or invoke it manually from the Lambda console to generate recommendations.
+10. Wait for the scheduled Lambda run, or invoke it manually from the Lambda console to generate recommendations.
 
 ## Validation
 
