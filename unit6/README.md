@@ -24,9 +24,9 @@ This project deploys a small AWS environment that hosts a demo application on EC
 1. Configure the AWS CLI: Use individual values in your AWS service client, and copy  your AWS access key ID, AWS secret access key, and AWS session token to terraform variables
 
 2. Install Terraform from the Command Line (e.g Cloudshell)
+   
     1  sudo yum install -y yum-utils
     2  curl -O https://releases.hashicorp.com/terraform/1.5.7/terraform_1.5.7_linux_amd64.zip
-
     3  unzip terraform_1.5.7_linux_amd64.zip
     4  sudo mv terraform /usr/local/bin/
     5  terraform -v
